@@ -1,0 +1,12 @@
+@import './assets/styles/_reset.scss';
+@import './assets/styles/_variables.scss';
+
+.wrapper {
+    margin: 0 auto;
+    max-width: $screen-sm;
+    position: relative;
+}
+
+.main {
+    margin: $offset-md auto;
+}

@@ -1,0 +1,60 @@
+@import '../../assets/styles/_variables.scss';
+
+.header {
+    color: $white-color;
+    padding: $offset-md 0;
+    background: $topbar-color;
+    &__body {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.nav {
+    display: block;
+    &__list {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    &__item {
+
+    }
+    &__link {
+        display: block;
+        margin: 0 0 0 $font-md;
+        position: relative;
+        color: $white-color;
+        font-size: $font-md;
+        padding: $offset-mc $offset-sm;
+        transition: all $animation-fast;
+        &::before {
+            opacity: 0;
+            transition: all $animation-fast;
+        }
+        &:hover {
+            color: $light-color;
+        }
+        &-active {
+            z-index: 1;
+            color: $topbar-color;
+            &::before {
+                content: "";
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                opacity: 1;
+                z-index: -1;
+                position: absolute;
+                background-color: $white-color;
+            }
+        }   
+    }
+}
+
+.logo {
+    font-size: $font-lg;
+    font-weight: bold;
+}
