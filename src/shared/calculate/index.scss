@@ -1,0 +1,32 @@
+@import '../../assets/styles/_variables.scss';
+
+.list {
+    &-item {
+        // display: flex;
+        // justify-content: space-between;
+        // align-items: flex-start;
+        border-bottom: 1px solid $light-color;
+        padding: $offset-sm $offset-md;
+    }
+    &-section {
+    }
+    &-row {
+        padding: $offset-sm $offset-md;
+        border-bottom: 1px solid $light-color;
+    }
+    &-head {
+        font-weight: bold;
+        padding: $offset-mc 0;
+    }
+    &-value {
+
+    }
+}
+.summary {
+    font-size: $font-lg;
+    text-align: center;
+    margin: $offset-sm 0 $offset-lg;
+}
+.views-body {
+    margin: $offset-lg 0 $gap-md;
+}

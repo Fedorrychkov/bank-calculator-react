@@ -1,9 +1,13 @@
 @import './assets/styles/_reset.scss';
 @import './assets/styles/_variables.scss';
+@import './assets/styles/_input.scss';
+@import './assets/styles/_flexbox.scss';
+@import './assets/styles/_button.scss';
+@import './assets/styles/_table.scss';
 
 .wrapper {
     margin: 0 auto;
-    max-width: $screen-sm;
+    max-width: $screen-md;
     position: relative;
 }
 

@@ -1,0 +1,40 @@
+@import './_reset.scss';
+
+.form {
+    &-field {
+        position: relative;
+        width: 100%;
+        margin: $offset-sm 0;
+    }
+    &-label {
+        position: absolute;
+        top: $offset-sm*1.2;
+        left: $offset-sm;
+        transition: all $animation-fast;
+        opacity: 1;
+    }
+    &-control {
+        position: relative;
+        width: 100%;
+        padding: $offset-md $offset-sm $offset-mc;
+        box-sizing: border-box;
+        border: none;
+        border-bottom: 2px solid $light-color;
+        font-size: $font-md;
+        color: $gray-color;
+        &:focus, &:not(:placeholder-shown) {
+            & + .form-label {
+                top: $offset-mc*.6;
+                font-size: $font-sm*1;
+                font-weight: bold;
+                opacity: .8;
+            }
+        }
+    }
+}
+
+.flexbox {
+    & .form-field {
+        max-width: 44%
+    }
+}

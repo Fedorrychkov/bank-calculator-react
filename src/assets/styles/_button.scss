@@ -1,0 +1,24 @@
+@import './_variables.scss';
+
+.button {
+    background-color: #eaeaea;
+    font-size: $font-md;
+    color: #333;
+    border: none;
+    background: none;
+    transition: all $animation-fast;
+    cursor: pointer;
+    &-action {
+        border: 2px solid $dark-color;
+        padding: $offset-sm $offset-md;
+        margin: $offset-sm 0;
+        width: 100%;
+        &:hover {
+            background-color: $dark-color;
+            color: $white-color;
+        }
+        &:active {
+            transform: scale(0.95);
+        }
+    }
+}

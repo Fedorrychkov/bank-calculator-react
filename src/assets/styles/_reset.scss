@@ -6,15 +6,13 @@
  html {
     font-family: 'Roboto', sans-serif;
     line-height: 1.15;
-    height: 100%;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
 }
 
 body {
     margin: 0;
-    height: 100%;
-    overflow: hidden;
+    overflow: auto;
     background-color: $white-color;
     font-size: $font-md;
     color: $darker-color;

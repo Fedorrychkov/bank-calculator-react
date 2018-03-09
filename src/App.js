@@ -3,8 +3,8 @@ import { Route, Switch } from 'react-router-dom';
 import './App.css';
 import NotFound from './notfound';
 import MainPage from './main';
-import DebitComponent from './main/debit';
-import CreditComponent from './main/credit';
+// import DebitComponent from './main/debit';
+// import CreditComponent from './main/credit';
 
 class App extends Component {
   render() {
